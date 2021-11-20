@@ -1,0 +1,14 @@
+.navbar {
+    position: relative;
+    height: 50%;
+    padding: 40px;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+}
+#Copyright{
+    color: aliceblue;
+}
