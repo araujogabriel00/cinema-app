@@ -15,12 +15,12 @@ class CreateSiteContatosTable extends Migration
     {
         Schema::create('site_contatos', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
-            $table->string('email');
+            $table->string('nome', 50);
+            $table->string('email')->unique();
             $table->timestamps();
-            $table->string('cidade');
-            $table->string('estado');
-            $table->duvidas();
+            $table->string('cidade',100);
+            $table->string('estado',100);
+            $table->string('duvidas', 100);
         });
     }
 
